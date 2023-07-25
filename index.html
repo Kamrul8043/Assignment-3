@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- icon style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Tailwind and daisyUI link -->
     
      <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
@@ -19,6 +21,8 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                white:'#fff',
+                red:'#dc2626',
               }
             }
           }
@@ -31,15 +35,85 @@
         }
     </style>
 </head>
-<body>
-    <header>
-
+<body class="font-style">
+   <header>
+     <nav class="py-8 px-auto">
+      <div class="navbar justify-evenly bg-[#F85559] rounded-full items-center ">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="navbar-start menu menu-sm dropdown-content mt-3  shadow  rounded-box ">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+          <div class="navbar-start hidden  lg:flex ">
+            <ul class="inline-flex text-white gap-5 px-3 -mr-6 ">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="navbar-center inline-flex gap-3 ">
+          <img src="images/logo.png" alt="">
+          <h2 class=" text-xl lg:text-4xl font-semibold text-white">Fruit Burst</h2>
+        </div>
+        <div class="navbar-end">
+          <input type="text" placeholder="Search"
+           class="input input-bordered w-24 md:w-auto rounded-full" />
+        </div>
+      </div>
+     </nav>
+       
     </header>
     <main>
+      <!-- banner section -->
+      <section class="py-10 px-10">
+        <div class="hero min-h-screen" style="background-image: url(images/banner1.png);">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-5xl font-bold text-white">Exotic tastes at your doorstep</h1>
+              <p class="mb-5">We supply highly quality organic products</p>
+              <button class="btn bg-[#F85559] text-white border-none">Shop Now</button>
+            </div>
+          </div>
+        </div>
 
-    </main>
-    <footer>
+      </section>
+      
 
+    </main> 
+    
+    <footer class="footer footer-center p-10 bg-[#121212] text-base-content">
+        <div class="inline-flex justify-center items-center gap-5">
+          <img src="images/logo.png" alt="">
+          <h2 class="text-4xl font-bold text-white">Fruit Burst</h2>
+        </div>
+      <div class="grid grid-flow-col gap-8 text-white ">
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">About us</a> 
+        <a class="link link-hover">Shop</a> 
+        <a class="link link-hover">All Fruits</a> 
+        <a class="link link-hover">Support</a>
+        <a class="link link-hover">My Account</a>
+      </div> 
+      <div>
+        <div class="grid grid-flow-col gap-8  ">
+          <a><i style="color: white;" class="fa-brands fa-twitter fa-xl"></i></a> 
+          <a><i style="color:#1872F2;" class="fa-brands fa-facebook fa-xl"></i></a> 
+          <a><i style="color: red;" class="fa-brands fa-youtube fa-xl"></i></a>
+          <a><i style="color: white;" class="fa-brands fa-instagram fa-xl"></i></a>
+          <a><i style="color: white;" class="fa-brands fa-apple fa-xl"></i></a>
+        </div>
+      </div> 
     </footer>
 </body>
 </html>
